@@ -1,25 +1,64 @@
 import Astronauta from "../../assets/astronauta.svg";
 import "./hero.scss";
+import { motion } from "framer-motion";
+
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-        <div className="textContainer">
-          <h2>Colégio Trivium apresenta:</h2>
-          <h1>STEM Experience</h1>
+        <motion.div
+          className="textContainer"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h2 variants={textVariants}>
+            Colégio Trivium apresenta:
+          </motion.h2>
+          <motion.h1 variants={textVariants}>STEM Experience</motion.h1>
           <div className="buttons">
-            <button>Acesse o instagram do Colégio</button>
+            <motion.button variants={textVariants}>
+              Acesse o Instagram do Colégio
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="imageContainer">
+      <motion.div
+        className="slidingTextContainer"
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+      >
+        The Future is Here!
+      </motion.div>
+      <motion.div
+        className="imageContainer"
+        variants={textVariants}
+        initial="initial"
+        animate="animate"
+      >
         <img
           src={Astronauta}
           alt=" Imagem de um
         Astronauta"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

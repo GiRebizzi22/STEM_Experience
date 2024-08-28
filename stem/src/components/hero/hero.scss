@@ -3,13 +3,14 @@
   background-image: url(../../assets/galaxia2.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto 150px;
+    margin: auto;
 
     .textContainer {
       height: 100%;
@@ -19,7 +20,7 @@
       gap: 40px;
 
       h2 {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 500;
         color: #ffffff;
         font-style: italic;
@@ -27,23 +28,48 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 70px;
         font-weight: 500;
-        color: #e792ff;
+        color: #d4c0fe;
         letter-spacing: 3px;
       }
 
       .buttons {
         button {
-          font-size: 20px;
-          color: #09000c;
-          padding: 30px;
-          border: transparent;
-          border-radius: 20px;
-          background: linear-gradient(220deg, #4c00ff, #ff29b1, #eca741);
+          font-size: 24px;
+          color: #fff;
+          padding: 25px;
+          border: none;
+          border-radius: 10px 40px;
+          background: linear-gradient(
+            120deg,
+            #405ce656,
+            #5a51d854,
+            #833ab456,
+            #c1358459,
+            #e1306b56,
+            #f561405a,
+            #fcb04555,
+            #ffdb8054
+          );
+          cursor: pointer;
         }
       }
     }
+  }
+
+  .slidingTextContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 20px;
+    font-size: 15vh;
+    font-style: italic;
+    top: 85%;
+    white-space: nowrap;
+    color: #e0ceff23;
+    width: 100%;
   }
 
   .imageContainer {
@@ -51,6 +77,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
   }
 }
