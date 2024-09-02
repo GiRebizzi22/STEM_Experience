@@ -14,6 +14,7 @@ function App() {
         <section id="STEM">
           <Parallax type="stem" />
         </section>
+        <section id="Descricao">Texto explicando stem</section>
         <section id="Projects">Projects</section>
         <section id="More">More informations</section>
         <section id="Comments">Comments</section>

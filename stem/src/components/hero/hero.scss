@@ -1,9 +1,10 @@
 .hero {
   height: calc(100vh - 100px);
-  background-image: url(../../assets/galaxia.svg);
+  background-image: url(../../assets/stars.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
+  background-color: #000;
 
   .wrapper {
     max-width: 1366px;
@@ -43,14 +44,14 @@
           border-radius: 6px 40px;
           background: linear-gradient(
             120deg,
-            #405ce674,
-            #5a51d876,
-            #833ab475,
-            #c1358476,
-            #e1306b7a,
-            #f561406d,
-            #fcb04575,
-            #ffdb8074
+            #405ce6c5,
+            #5a51d8ce,
+            #833ab4d5,
+            #c13584d0,
+            #e1306bcf,
+            #f56140d3,
+            #fcb045d8,
+            #ffdb80d4
           );
           cursor: pointer;
         }
