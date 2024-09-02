@@ -34,19 +34,25 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>STEM Experience</motion.h1>
           <div className="buttons">
             <motion.button variants={textVariants}>
-              Acesse o Instagram do Colégio
+              <a
+                href="https://www.instagram.com/colegiotrivium/"
+                target="blank"
+              >
+                {" "}
+                Acesse o Instagram do Colégio
+              </a>
             </motion.button>
           </div>
         </motion.div>
       </div>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={textVariants}
         initial="initial"
         animate="animate"
       >
         The Future is Here!
-      </motion.div>
+      </motion.div> */}
       <motion.div
         className="imageContainer"
         variants={textVariants}
