@@ -27,7 +27,14 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["Home", "STEM", "Projects", "More", "Comments"];
+  const items = [
+    "Home",
+    "O que é STEM?",
+    "Descrição",
+    "Projects",
+    "More",
+    "Comments",
+  ];
 
   return (
     <>

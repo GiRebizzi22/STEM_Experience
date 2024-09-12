@@ -1,7 +1,9 @@
 import "./app.scss";
+import Description from "./components/description/Description";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
+import Project from "./components/projects/Project";
 
 function App() {
   return (
@@ -11,11 +13,15 @@ function App() {
           <Navbar />
           <Hero />
         </section>
-        <section id="STEM">
+        <section id="O que é STEM?">
           <Parallax type="stem" />
         </section>
-        <section id="Descricao">Texto explicando stem</section>
-        <section id="Projects">Projects</section>
+        <section id="Descrição">
+          <Description />
+        </section>
+        <section id="Projects">
+          <Project />
+        </section>
         <section id="More">More informations</section>
         <section id="Comments">Comments</section>
       </div>

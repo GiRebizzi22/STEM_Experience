@@ -45,14 +45,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      {/* <motion.div
-        className="slidingTextContainer"
-        variants={textVariants}
-        initial="initial"
-        animate="animate"
-      >
-        The Future is Here!
-      </motion.div> */}
+
       <motion.div
         className="imageContainer"
         variants={textVariants}
