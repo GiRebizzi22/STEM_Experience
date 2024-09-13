@@ -1,32 +1,31 @@
-import "./project.scss";
-import ProjetoX from "./../../assets/insta.png";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
+import "./project.scss";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
     id: 1,
-    title: "Projeto 1",
-    img: ProjetoX,
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "React Commerce",
+    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 2,
-    title: "Projeto 2",
-    img: ProjetoX,
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "Next.js Blog",
+    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 3,
-    title: "Projeto 3",
-    img: ProjetoX,
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "Vanilla JS App",
+    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 4,
-    title: "Projeto 4",
-    img: ProjetoX,
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    title: "Music App",
+    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
 ];
 
@@ -41,17 +40,19 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section ref={ref}>
+    <section>
       <div className="container">
         <div className="wrapper">
-          {/* eslint-disable-next-line react/prop-types */}
-          <img src={item.img} alt="Imagem do Projeto 1" />
+          <div className="imageContainer" ref={ref}>
+            {/* eslint-disable-next-line react/prop-types */}
+            <img src={item.img} alt="" />
+          </div>
           <motion.div className="textContainer" style={{ y }}>
             {/* eslint-disable-next-line react/prop-types */}
             <h2>{item.title}</h2>
             {/* eslint-disable-next-line react/prop-types */}
-            <p>{item.description}</p>
-            <button>Acessar Projeto</button>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
           </motion.div>
         </div>
       </div>
@@ -59,7 +60,7 @@ const Single = ({ item }) => {
   );
 };
 
-const Project = () => {
+const Portfolio = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -73,9 +74,9 @@ const Project = () => {
   });
 
   return (
-    <div className="project" ref={ref}>
+    <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Confira os Projetos dos Alunos:</h1>
+        <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
@@ -85,4 +86,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Portfolio;
