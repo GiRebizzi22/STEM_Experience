@@ -1,2 +1,47 @@
 .project {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #c4e2f4;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    .progressBar {
+      height: 7px;
+      border: transparent solid 1px;
+      border-radius: 30px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      gap: 50px;
+
+      img {
+        flex: 1;
+        height: 50%;
+        object-fit: cover;
+      }
+      .textContainer {
+        flex: 1;
+      }
+    }
+  }
 }

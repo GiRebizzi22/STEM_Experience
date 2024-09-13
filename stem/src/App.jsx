@@ -19,9 +19,9 @@ function App() {
         <section id="Descrição">
           <Description />
         </section>
-        <section id="Projects">
+        <div id="Projects">
           <Project />
-        </section>
+        </div>
         <section id="More">More informations</section>
         <section id="Comments">Comments</section>
       </div>

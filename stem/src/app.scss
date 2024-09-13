@@ -13,6 +13,11 @@ html {
 body {
   background: linear-gradient(110deg, #0c0324, #251550, #4206ce);
   color: lightgrey;
+
+  // #Projects {
+  //   min-height: 100vh;
+  //   overflow-y: visible;
+  // }
 }
 
 a {
@@ -23,5 +28,5 @@ section {
   height: 100vh;
   scroll-snap-align: center;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
