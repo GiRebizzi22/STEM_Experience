@@ -3,6 +3,8 @@
 .portfolio {
   position: relative;
   background-image: url("./../../assets/galaxia.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .progress {
     position: sticky;

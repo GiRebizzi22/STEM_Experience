@@ -4,6 +4,7 @@ import Ex from "./../../assets/insta.png";
 const MoreInfo = () => {
   return (
     <div className="more">
+      <h1>Saiba Mais</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis
         pharetra purus ac venenatis. Orci varius natoque penatibus et magnis dis
@@ -20,10 +21,7 @@ const MoreInfo = () => {
         faucibus. Nulla pharetra odio a tellus ullamcorper, ut venenatis lorem
         tincidunt. Donec auctor laoreet nisi vel semper. Proin tincidunt
         venenatis vehicula. Duis tincidunt, eros ac iaculis porta, sem massa
-        imperdiet purus, non ultrices ipsum lacus nec diam. Maecenas convallis
-        rhoncus placerat. Cras eleifend risus lectus. Etiam pretium placerat
-        urna, vitae vestibulum turpis vestibulum non. Nam nulla ipsum, lobortis
-        in lorem eget, vestibulum faucibus est.
+        imperdiet purus, non ultrices ipsum lacus nec diam.
       </p>
       <div className="iMages">
         <img src={Ex} alt="" />

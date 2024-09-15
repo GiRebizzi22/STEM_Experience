@@ -1,6 +1,6 @@
 import "./app.scss";
-import Comments from "./components/comments/Comments";
 import Description from "./components/description/Description";
+import Form from "./components/form/Form";
 import Hero from "./components/hero/Hero";
 import MoreInfo from "./components/moreinfo/MoreInfo";
 import Navbar from "./components/navbar/Navbar";
@@ -27,8 +27,8 @@ function App() {
         <section id="More">
           <MoreInfo />
         </section>
-        <section id="Comments">
-          <Comments />
+        <section id="Feedback">
+          <Form />
         </section>
       </div>
     </>

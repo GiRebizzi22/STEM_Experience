@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: linear-gradient(180deg, #2d1275, #8567d7);
+
+  .areatexto {
+  }
+
+  h1 {
+    font-size: 100px;
+    margin: 5%;
+  }
+}

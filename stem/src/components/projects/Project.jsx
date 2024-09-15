@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./project.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjetoX from "./../../assets/insta.png";
+import { useNavigate } from "react-router-dom";
 
 const items = [
   {
@@ -34,6 +35,8 @@ const items = [
 const Single = ({ item }) => {
   const ref = useRef();
 
+  const navigate = useNavigate();
+
   const { scrollYProgress } = useScroll({
     target: ref,
   });
@@ -53,7 +56,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             {/* eslint-disable-next-line react/prop-types */}
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button onClick={() => navigate("./projeto1")}>See Demo</button>
           </motion.div>
         </div>
       </div>

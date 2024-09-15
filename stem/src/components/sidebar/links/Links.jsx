@@ -33,7 +33,7 @@ const Links = () => {
     "Descrição",
     "Projects",
     "More",
-    "Comments",
+    "Feedback",
   ];
 
   return (
