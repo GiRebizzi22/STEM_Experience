@@ -1,6 +1,8 @@
 import "./app.scss";
+import Comments from "./components/comments/Comments";
 import Description from "./components/description/Description";
 import Hero from "./components/hero/Hero";
+import MoreInfo from "./components/moreinfo/MoreInfo";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Project from "./components/projects/Project";
@@ -22,8 +24,12 @@ function App() {
         <div id="Projects">
           <Project />
         </div>
-        <section id="More">More informations</section>
-        <section id="Comments">Comments</section>
+        <section id="More">
+          <MoreInfo />
+        </section>
+        <section id="Comments">
+          <Comments />
+        </section>
       </div>
     </>
   );
