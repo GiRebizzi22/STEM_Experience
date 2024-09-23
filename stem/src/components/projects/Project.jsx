@@ -29,6 +29,36 @@ const items = [
     img: ProjetoX,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
+  {
+    id: 5,
+    title: "Projeto 5",
+    img: ProjetoX,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
+  {
+    id: 6,
+    title: "Projeto 6",
+    img: ProjetoX,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
+  {
+    id: 7,
+    title: "Projeto 7",
+    img: ProjetoX,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
+  {
+    id: 8,
+    title: "Projeto 8",
+    img: ProjetoX,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
+  {
+    id: 9,
+    title: "Projeto 9",
+    img: ProjetoX,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
 ];
 
 // eslint-disable-next-line react/prop-types

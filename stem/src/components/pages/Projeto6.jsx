@@ -3,7 +3,7 @@ import "./projeto1.scss";
 import axios from "axios";
 import Ex from "./../../assets/insta.png";
 
-const Projeto1 = () => {
+const Projeto6 = () => {
   const [comentarios, setComentarios] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Projeto1 = () => {
   }, []);
   return (
     <div className="projeto1">
-      <h1>Projeto 1</h1>
+      <h1>Projeto 6</h1>
       <p className="desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis
         pharetra purus ac venenatis. Orci varius natoque penatibus et magnis dis
@@ -60,4 +60,4 @@ const Projeto1 = () => {
   );
 };
 
-export default Projeto1;
+export default Projeto6;

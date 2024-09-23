@@ -6,9 +6,21 @@
   align-items: center;
   background: linear-gradient(180deg, #2d1275, #8567d7);
 
-  .areatexto {
-  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
+    .areatexto {
+      display: inherit;
+      flex-direction: inherit;
+    }
+
+    .bt {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
   h1 {
     font-size: 100px;
     margin: 5%;

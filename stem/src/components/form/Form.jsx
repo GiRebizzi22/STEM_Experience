@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./form.scss";
-import Footer from "../rodape/Footer";
+// import Projeto1 from "../pages/Projeto1";
+// import Footer from "../rodape/Footer";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ function Form() {
 
       <form className="formulario" onSubmit={handleSubmit}>
         <div className="areatexto">
-          <label htmlFor="textArea1">Área de Texto 1:</label>
+          <label htmlFor="textArea1">Digite seu nome:</label>
           <input
             type="text"
             id="textArea1"
@@ -41,8 +42,8 @@ function Form() {
           />
         </div>
 
-        <div>
-          <label htmlFor="textArea2">Área de Texto 2:</label>
+        <div className="areatexto">
+          <label htmlFor="textArea2">Deixe seu comentário:</label>
           <textarea
             id="textArea2"
             name="textArea2"
@@ -53,7 +54,9 @@ function Form() {
           />
         </div>
 
-        <button type="submit">Enviar</button>
+        <button className="bt" type="submit">
+          Enviar
+        </button>
       </form>
       {/* <Footer /> */}
     </div>
