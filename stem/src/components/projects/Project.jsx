@@ -95,7 +95,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             {/* eslint-disable-next-line react/prop-types */}
             <p>{item.desc}</p>
-            // eslint-disable-next-line react/prop-types
+            {/* eslint-disable-next-line react/prop-types */}
             <button onClick={() => navigate(`${item.rota}`)}>See Demo</button>
           </motion.div>
         </div>
