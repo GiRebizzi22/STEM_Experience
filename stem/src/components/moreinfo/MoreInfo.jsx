@@ -13,15 +13,7 @@ const MoreInfo = () => {
         sed quam. Aenean pharetra vulputate faucibus. Nullam quis nunc id purus
         finibus tincidunt. Vivamus sed ligula nec odio feugiat faucibus.
         Phasellus imperdiet pharetra dolor, vel rutrum sem. Vestibulum sed sem
-        sed leo imperdiet malesuada. Aliquam et sapien erat. Integer eleifend
-        tellus a tellus egestas vulputate. Curabitur quis ligula in est
-        vulputate interdum id vitae urna. Quisque ut turpis quis nisi mollis
-        interdum. Pellentesque quis enim lobortis, luctus sem id, lacinia urna.
-        In hac habitasse platea dictumst. Nunc eget erat in libero feugiat
-        faucibus. Nulla pharetra odio a tellus ullamcorper, ut venenatis lorem
-        tincidunt. Donec auctor laoreet nisi vel semper. Proin tincidunt
-        venenatis vehicula. Duis tincidunt, eros ac iaculis porta, sem massa
-        imperdiet purus, non ultrices ipsum lacus nec diam.
+        sed leo imperdiet malesuada.
       </p>
       {/* <div className="iMages">
         <img src={Ex} alt="" />

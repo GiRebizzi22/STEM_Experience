@@ -1,9 +1,15 @@
+@import "../../app.scss";
+
 .navbar {
   height: 100px;
   background-color: #000000;
 
   .title {
     font-size: 22px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -15,6 +21,11 @@
     height: 100%;
     margin: auto;
     padding-left: 70px;
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
     img {
       height: 50px;
       width: 50px;

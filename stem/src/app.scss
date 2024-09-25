@@ -30,3 +30,19 @@ section {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
