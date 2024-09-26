@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./projeto1.scss";
 import axios from "axios";
 import Ex from "./../../assets/insta.png";
+import Form from "../form/Form";
+// import Form from "../form/Form";
 
 const Projeto1 = () => {
   const [comentarios, setComentarios] = useState([]);
@@ -24,7 +26,7 @@ const Projeto1 = () => {
   }, []);
   return (
     <div className="projeto1">
-      <h1>Projeto 1</h1>
+      <h1 className="t1">Projeto 1</h1>
       <p className="desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis
         pharetra purus ac venenatis. Orci varius natoque penatibus et magnis dis
@@ -44,7 +46,10 @@ const Projeto1 = () => {
         <img src={Ex} alt="imagem do projeto1" />
         <img src={Ex} alt="imagem do projeto1" />
       </div>
-      <h1>Feedbacks:</h1>
+
+      <Form />
+
+      <h1>Comentários:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: linear-gradient(110deg, #0c0324, #251550, #4206ce);
+  background: linear-gradient(180deg, #0c0324, #251550, #31167d);
   color: lightgrey;
 
   // #Projects {
@@ -29,6 +29,10 @@ section {
   scroll-snap-align: center;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+#Footer {
+  height: 90px;
 }
 
 @mixin mobile {

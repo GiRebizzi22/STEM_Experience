@@ -6,7 +6,7 @@ import MoreInfo from "./components/moreinfo/MoreInfo";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Project from "./components/projects/Project";
-
+import Footer from "./components/rodape/Footer";
 function App() {
   return (
     <>
@@ -29,6 +29,9 @@ function App() {
         </section>
         <section id="Feedback">
           <Form />
+        </section>
+        <section id="Footer">
+          <Footer />
         </section>
       </div>
     </>
