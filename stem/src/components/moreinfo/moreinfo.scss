@@ -20,8 +20,9 @@
     // border-radius: 4px;
 
     @include mobile {
+      font-size: 18px;
       flex-direction: column;
-      margin: 5%;
+      // margin: 2%;
     }
   }
 
@@ -34,6 +35,13 @@
     text-align: center;
     letter-spacing: 2px;
     line-height: 50px;
+
+    @include mobile {
+      line-height: 150%;
+      font-size: 12px;
+      // flex-direction: column;
+      // margin: 2%;
+    }
   }
 
   // .iMages {
