@@ -46,7 +46,7 @@ const Projeto1 = () => {
         <img src={Ex} alt="imagem do projeto1" />
       </div>
 
-      <Form />
+      <Form projeto={"projeto1"} atualiza={getComentarios} />
 
       <h1>Comentários:</h1>
 
@@ -60,7 +60,6 @@ const Projeto1 = () => {
           <p className="tx">{comentario.comentario}</p>
         </div>
       ))}
-      <Form projeto={"projeto1"} atualiza={getComentarios} />
     </div>
   );
 };

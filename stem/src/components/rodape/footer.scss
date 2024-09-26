@@ -5,7 +5,7 @@
   background-size: cover;
   background-color: #180533;
   width: 100%;
-  height: 90px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,11 @@
   @include mobile {
     display: flex;
     flex-direction: column;
-    height: 90px;
+    height: 100%;
+    padding: 5%;
+    justify-content: center;
+    gap: 10%;
+    // font-size: 16px;
   }
 
   .flex {
@@ -32,6 +36,7 @@
       @include mobile {
         font-size: 22px;
         margin: 8px;
+        text-align: center;
       }
 
       .link {
@@ -39,6 +44,10 @@
         font-weight: bold;
         border-bottom: solid 2px #c9a7f9;
         font-size: 24px;
+
+        @include mobile {
+          font-size: 22px;
+        }
       }
     }
   }

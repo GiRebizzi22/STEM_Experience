@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// import Stem from "../../assets/logostem1.svg";
+import Stem from "../../assets/logoSTEM.png";
 import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
 
@@ -27,8 +27,8 @@ const Navbar = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ durantion: 0.5 }}
-                // src={Stem}
-                // alt="Logo Colégio"
+                src={Stem}
+                alt="Logo Colégio"
               />
             </a>
           </div>

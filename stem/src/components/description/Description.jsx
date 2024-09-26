@@ -2,7 +2,8 @@ import { useRef } from "react";
 import "./description.scss";
 // import Mao from "./../../assets/hand.png";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Ex from "../../assets/insta.png";
+import Turma from "../../assets/turma1.jpg";
+import Comp from "../../assets/manucomp.jpg";
 
 function Description() {
   const ref = useRef();
@@ -31,9 +32,9 @@ function Description() {
 
       {/* <img src={Mao} alt="Imagem de mão robótica" /> */}
       <motion.div style={{ x: yBg }} className="grid">
-        <img src={Ex} alt="" />
+        <img src={Turma} alt="" />
         <motion.div className="grid2">
-          <img src={Ex} alt="" />
+          <img src={Comp} alt="" />
         </motion.div>
       </motion.div>
     </motion.div>

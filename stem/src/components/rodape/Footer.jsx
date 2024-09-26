@@ -12,7 +12,7 @@ const Footer = () => {
             className="link"
             target="blank"
           >
-            Giovanna Miguel Rebizzi
+            Giovanna Rebizzi
           </a>
         </h2>
       </div>

@@ -12,15 +12,16 @@
   //   position: relative;
 
   h1 {
-    margin: 4% 0 2%;
+    margin: 2% auto;
     font-size: 60px;
     color: #d2b8ff;
     border-bottom: solid 2px;
     padding: 7px;
     letter-spacing: 1px;
+    max-width: 80%;
 
     @include mobile {
-      margin: 2%;
+      // margin: 2%;
       font-size: 32px;
     }
     // @include tablet {
@@ -43,7 +44,7 @@
     @include mobile {
       text-align: center;
       font-size: 16px;
-      margin: 5% 3% 10%;
+      margin: 5% 3%;
     }
     // @include tablet {
     //   text-align: center;
@@ -53,18 +54,19 @@
 
   .grid {
     display: flex;
-    gap: 100px;
-    margin: 2% auto;
+    gap: 10%;
+    margin: 2% 4%;
+    justify-content: space-evenly;
 
     img {
       border-radius: 30px;
       width: 320px;
-      height: 280px;
+      height: 300px;
 
       @include mobile {
-        gap: 5%;
-        width: 70%;
-        height: 200px;
+        // gap: 5%;
+        width: 87%;
+        height: 100%;
       }
     }
 

@@ -1,12 +1,12 @@
 import "./app.scss";
 import Description from "./components/description/Description";
-import Form from "./components/form/Form";
+// import Form from "./components/form/Form";
 import Hero from "./components/hero/Hero";
 import MoreInfo from "./components/moreinfo/MoreInfo";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Project from "./components/projects/Project";
-import Footer from "./components/rodape/Footer";
+// import Footer from "./components/rodape/Footer";
 function App() {
   return (
     <>
@@ -27,12 +27,12 @@ function App() {
         <section id="More">
           <MoreInfo />
         </section>
-        <section id="Feedback">
+        {/* <section id="Feedback">
           <Form />
         </section>
         <section id="Footer">
           <Footer />
-        </section>
+        </section> */}
       </div>
     </>
   );
