@@ -20,9 +20,9 @@
     // border-radius: 4px;
 
     @include mobile {
-      font-size: 18px;
+      font-size: 30px;
       flex-direction: column;
-      // margin: 2%;
+      margin: 2%;
     }
   }
 
@@ -38,7 +38,7 @@
 
     @include mobile {
       line-height: 150%;
-      font-size: 12px;
+      font-size: 20px;
       // flex-direction: column;
       // margin: 2%;
     }
