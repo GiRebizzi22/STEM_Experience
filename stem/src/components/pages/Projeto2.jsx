@@ -3,25 +3,26 @@ import "./projeto1.scss";
 import axios from "axios";
 // import Ex from "./../../assets/insta.png";
 import Cubo1 from "./../../assets/cubo1.jpg";
+import Cubo2 from "./../../assets/cubo2.jpg";
 import Cubo3 from "./../../assets/cubo3.jpg";
+import Form from "../form/Form";
 
 const Projeto2 = () => {
   const [comentarios, setComentarios] = useState([]);
-
+  const getComentarios = async () => {
+    try {
+      const response = await axios.get(
+        "http://82.112.244.100:8070/comentarios"
+      );
+      console.log(response.data);
+      setComentarios(
+        response.data.filter((item) => item.projeto === "projeto1")
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
-    const getComentarios = async () => {
-      try {
-        const response = await axios.get(
-          "http://82.112.244.100:8070/comentarios"
-        );
-        console.log(response.data);
-        setComentarios(
-          response.data.filter((item) => item.projeto === "projeto1")
-        );
-      } catch (error) {
-        console.log(error);
-      }
-    };
     getComentarios();
   }, []);
   return (
@@ -52,8 +53,12 @@ const Projeto2 = () => {
 
       <div className="im">
         <img src={Cubo1} alt="imagem do projeto1" />
+        <img src={Cubo2} alt="imagem do projeto1" />
         <img src={Cubo3} alt="imagem do projeto1" />
       </div>
+
+      <Form projeto={"projeto1"} atualiza={getComentarios} />
+
       <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (

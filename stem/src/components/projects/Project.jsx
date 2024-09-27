@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Capa1 from "./../../assets/pietra1.jpg";
 import Cubo2 from "./../../assets/cubo2.jpg";
 import Piano from "./../../assets/capapiano.jpg";
-import Torneira from "./../../assets/torneira.jpg";
+import Torneira from "./../../assets/suco1.jpg";
 import Dino from "./../../assets/plataforma1.jpg";
 import Girassol from "./../../assets/girassolcapa.jpg";
 // import Torneira from "./../../assets/torneira.jpg";
