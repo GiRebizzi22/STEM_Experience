@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 50%;
+    margin-left: 25%;
 
     @include mobile {
       margin: 10% auto;
@@ -31,7 +33,7 @@
     }
 
     .bt {
-      width: 50%;
+      width: 20%;
       margin: 0 auto;
       padding: 15px 30px;
       border-radius: 20px;

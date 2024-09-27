@@ -6,7 +6,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  // text-align: start;
   .t1 {
     margin-top: 2%;
   }
@@ -15,6 +15,7 @@
     margin: 10% 1% 2%;
     font-size: 70px;
     letter-spacing: 2px;
+    text-align: center;
 
     @include mobile {
       font-size: 40px;

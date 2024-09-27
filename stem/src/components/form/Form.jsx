@@ -31,11 +31,10 @@ function Form(props) {
       <form className="formulario" onSubmit={handleSubmit}>
         <div className="areatexto">
           <label htmlFor="textArea1">Digite seu nome:</label>
-          <input
-            type="text"
+          <textarea
             id="textArea1"
             name="textArea1"
-            rows="4"
+            rows="2"
             cols="50"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
@@ -47,7 +46,7 @@ function Form(props) {
           <textarea
             id="textArea2"
             name="textArea2"
-            rows="4"
+            rows="6"
             cols="50"
             value={comentario}
             onChange={(e) => setComentario(e.target.value)}

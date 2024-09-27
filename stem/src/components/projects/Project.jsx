@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 const items = [
   {
     id: 1,
-    title: "Projeto 1",
+    title: "Basketball Point",
     img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Projeto do 2º E.M.Este é o nosso marcador de pontos automático com Arduino. Ele nos mostra como conceitos de STEM podem ser aplicados em projetos do mundo real e ajudar a tornar atividades comuns, como jogar basquete, ainda mais divertidas e tecnológicas!",
     rota: "/projeto1",
   },
   {
