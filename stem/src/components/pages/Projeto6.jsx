@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import "./projeto1.scss";
 import axios from "axios";
-import Ex from "./../../assets/insta.png";
+import Grs from "./../../assets/girassol1.jpg";
 
 const Projeto6 = () => {
   const [comentarios, setComentarios] = useState([]);
@@ -24,27 +25,40 @@ const Projeto6 = () => {
   }, []);
   return (
     <div className="projeto1">
-      <h1>Projeto 6</h1>
+      <h1>Seguessol</h1>
       <p className="desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis
-        pharetra purus ac venenatis. Orci varius natoque penatibus et magnis dis
-        parturient montes, nascetur ridiculus mus. Donec posuere, lectus sed
-        bibendum lacinia, sapien ipsum consectetur purus, nec varius velit lorem
-        sed quam. Aenean pharetra vulputate faucibus. Nullam quis nunc id purus
-        finibus tincidunt. Vivamus sed ligula nec odio feugiat faucibus.
-        Phasellus imperdiet pharetra dolor, vel rutrum sem. Vestibulum sed sem
-        sed leo imperdiet malesuada. Aliquam et sapien erat. Integer eleifend
-        tellus a tellus egestas vulputate. Curabitur quis ligula in est
-        vulputate interdum id vitae urna. Quisque ut turpis quis nisi mollis
-        interdum.
+        Primeiro, a gente usa os LDRs para detectar a quantidade de luz em dois
+        pontos diferentes. Eles são basicamente resistores que mudam sua
+        resistência de acordo com a quantidade de luz que recebem. Coloquei um
+        LDR de cada lado do girassol, para que o Arduino possa comparar a luz
+        que está chegando de cada direção.
+        <br />
+        <br />
+        O Arduino, que é o "cérebro" do projeto, vai receber os dados desses
+        dois LDRs e, se a luz em um lado for mais forte que no outro, ele envia
+        um comando para o servo motor girar o vaso na direção da luz mais forte.
+        É como se ele estivesse "ajustando" o girassol para apontar na direção
+        do sol.
+        <br />
+        <br />
+        O servo motor é a parte que faz o vaso se mover. Como ele gira em
+        ângulos específicos, é possível controlar exatamente para onde o
+        girassol vai virar. Então, quando um dos LDRs detecta mais luz, o servo
+        gira o girassol até que ambos os LDRs estejam recebendo a mesma
+        quantidade de luz.
+        <br />
+        <br />
+        No final, o resultado é um girassol artificial que se move como se
+        estivesse vivo, sempre procurando a melhor posição para receber luz!
+        Além de ser super legal, esse projeto ensina conceitos de eletrônica
+        básica, programação e até biologia, já que estamos imitando o
+        comportamento natural de uma planta.
       </p>
 
       <div className="im">
-        <img src={Ex} alt="imagem do projeto1" />
-        <img src={Ex} alt="imagem do projeto1" />
-        <img src={Ex} alt="imagem do projeto1" />
+        <img src={Grs} alt="imagem do projeto1" />
       </div>
-      <h1>Feedbacks:</h1>
+      <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>

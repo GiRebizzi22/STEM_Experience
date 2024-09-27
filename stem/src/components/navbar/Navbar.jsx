@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Stem from "../../assets/logoSTEM.png";
+import Stem from "../../assets/stemlogo.png";
 import "./navbar.scss";
 import Sidebar from "../sidebar/Sidebar";
 

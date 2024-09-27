@@ -3,48 +3,55 @@ import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjetoX from "./../../assets/insta.png";
 import { useNavigate } from "react-router-dom";
+import Capa1 from "./../../assets/pietra1.jpg";
+import Cubo2 from "./../../assets/cubo2.jpg";
+import Piano from "./../../assets/capapiano.jpg";
+import Torneira from "./../../assets/torneira.jpg";
+import Dino from "./../../assets/plataforma1.jpg";
+import Girassol from "./../../assets/girassolcapa.jpg";
+// import Torneira from "./../../assets/torneira.jpg";
 
 const items = [
   {
     id: 1,
     title: "Basketball Point",
-    img: ProjetoX,
+    img: Capa1,
     desc: "Projeto do 2º E.M.Este é o nosso marcador de pontos automático com Arduino. Ele nos mostra como conceitos de STEM podem ser aplicados em projetos do mundo real e ajudar a tornar atividades comuns, como jogar basquete, ainda mais divertidas e tecnológicas!",
     rota: "/projeto1",
   },
   {
     id: 2,
-    title: "Projeto 2",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Cubo Automático",
+    img: Cubo2,
+    desc: "Venha conferir o meu projeto de STEM: Um dado eletrônico feito com Arduino Uno e LEDs!",
     rota: "/projeto2",
   },
   {
     id: 3,
-    title: "Projeto 3",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Teclarduino",
+    img: Piano,
+    desc: "Piano eletrônico feito com o Arduino Uno, botões e um buzzer. O objetivo do projeto é criar um pequeno piano que emite sons diferentes conforme apertamos os botões.",
     rota: "/projeto3",
   },
   {
     id: 4,
-    title: "Projeto 4",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Suco Automático",
+    img: Torneira,
+    desc: "Suco automático usando um Arduino Uno, uma bomba d’água, um shield, e um sensor ultrassônico. A ideia desse projeto é simples: criar uma máquina que serve suco de forma automática, sem que a gente precise apertar nenhum botão.",
     rota: "/projeto4",
   },
   {
     id: 5,
-    title: "Projeto 5",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Dino Jump Platform",
+    img: Dino,
+    desc: "Hoje eu vou apresentar o meu projeto de STEM usando o Arduino Uno. A ideia é fazer um botão que funciona quando você pisa em uma plataforma, e ele serve pra controlar o Dino daquele jogo famoso, o do Chrome, fazendo ele pular.",
     rota: "/projeto5",
   },
   {
     id: 6,
-    title: "Projeto 6",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Seguessol",
+    img: Girassol,
+    desc: "Hoje vou apresentar um projeto de STEM que eu fiz usando o Arduino Uno, dois LDRs (que são sensores de luz), um servo motor e um girassol artificial. A ideia é simples, mas muito interessante: fiz com que o girassol seguisse a luz, como se fosse um girassol de verdade que sempre tenta ficar virado para o sol.",
     rota: "/projeto6",
   },
   {

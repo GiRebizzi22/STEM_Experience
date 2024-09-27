@@ -52,6 +52,12 @@
     }
   }
 
+  .fb {
+    @include mobile {
+      display: none;
+    }
+  }
+
   .comnts {
     display: flex;
     flex-direction: column;
@@ -76,7 +82,7 @@
       color: #040011;
     }
     @include mobile {
-      padding: 2%;
+      display: none;
     }
   }
 }

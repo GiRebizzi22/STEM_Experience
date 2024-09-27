@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./projeto1.scss";
 import axios from "axios";
-import Ex from "./../../assets/insta.png";
+import Piano1 from "./../../assets/piano1.jpg";
+import Piano2 from "./../../assets/piano2.jpg";
 
 const Projeto3 = () => {
   const [comentarios, setComentarios] = useState([]);
@@ -24,27 +25,38 @@ const Projeto3 = () => {
   }, []);
   return (
     <div className="projeto1">
-      <h1>Projeto 3</h1>
+      <h1>Teclarduino</h1>
       <p className="desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis
-        pharetra purus ac venenatis. Orci varius natoque penatibus et magnis dis
-        parturient montes, nascetur ridiculus mus. Donec posuere, lectus sed
-        bibendum lacinia, sapien ipsum consectetur purus, nec varius velit lorem
-        sed quam. Aenean pharetra vulputate faucibus. Nullam quis nunc id purus
-        finibus tincidunt. Vivamus sed ligula nec odio feugiat faucibus.
-        Phasellus imperdiet pharetra dolor, vel rutrum sem. Vestibulum sed sem
-        sed leo imperdiet malesuada. Aliquam et sapien erat. Integer eleifend
-        tellus a tellus egestas vulputate. Curabitur quis ligula in est
-        vulputate interdum id vitae urna. Quisque ut turpis quis nisi mollis
-        interdum.
+        Primeiro, eu usei o Arduino Uno como o cérebro do projeto, que é onde
+        todo o código que controla os sons fica armazenado. Conectei quatro
+        botões à placa do Arduino, cada um para representar uma nota musical
+        diferente. Além disso, eu usei um buzzer, que é tipo um pequeno
+        alto-falante, para reproduzir os sons.
+        <br />
+        <br />
+        <br />
+        O funcionamento é bem simples: quando apertamos um botão, ele envia um
+        sinal para o Arduino, e o código dentro do Arduino faz o buzzer tocar
+        uma frequência específica, que corresponde a uma nota musical. Para
+        isso, eu programei o Arduino com o IDE do Arduino, e cada botão está
+        ligado a uma frequência diferente, como as notas Dó, Ré, Mi e Fá.
+        <br />
+        <br />
+        Então, quando você pressiona o primeiro botão, ele toca o Dó, o segundo
+        botão toca o Ré, e assim por diante. Você pode até criar pequenas
+        músicas tocando os botões na ordem certa!
+        <br />
+        <br />
+        Esse projeto é bem legal porque combina programação, eletrônica e
+        música. Além disso, ele ajuda a entender como o som funciona, já que a
+        frequência controlada pelo código é o que define a altura da nota.
       </p>
 
       <div className="im">
-        <img src={Ex} alt="imagem do projeto1" />
-        <img src={Ex} alt="imagem do projeto1" />
-        <img src={Ex} alt="imagem do projeto1" />
+        <img src={Piano1} alt="imagem do projeto1" />
+        <img src={Piano2} alt="imagem do projeto1" />
       </div>
-      <h1>Feedbacks:</h1>
+      <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>

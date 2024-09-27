@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./projeto1.scss";
 import axios from "axios";
-import Ex from "./../../assets/insta.png";
-import Rede1 from "./../../assets/pedrinhorede.jpg";
+// import Ex from "./../../assets/insta.png";
 import Rede2 from "./../../assets/parafusadeira.jpg";
-// import Rede1 from "./../../assets/pedrinhorede.jpg";
+import Capa from "./../../assets/capabask.jpg";
+import Capa2 from "./../../assets/pietra2.jpg";
+
 import Form from "../form/Form";
 
 const Projeto1 = () => {
@@ -76,14 +77,14 @@ const Projeto1 = () => {
       </p>
 
       <div className="im">
-        <img src={Rede1} alt="imagem do projeto1" />
+        <img src={Capa} alt="imagem do projeto1" />
         <img src={Rede2} alt="imagem do projeto1" />
-        <img src={Ex} alt="imagem do projeto1" />
+        <img src={Capa2} alt="imagem do projeto1" />
       </div>
 
       <Form projeto={"projeto1"} atualiza={getComentarios} />
 
-      <h1>Comentários:</h1>
+      <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>
