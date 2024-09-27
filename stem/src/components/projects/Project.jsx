@@ -1,5 +1,5 @@
-import { useRef } from "react";
 import "./project.scss";
+import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ProjetoX from "./../../assets/insta.png";
 import { useNavigate } from "react-router-dom";

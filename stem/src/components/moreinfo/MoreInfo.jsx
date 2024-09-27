@@ -1,5 +1,5 @@
 import "./moreinfo.scss";
-// import Ex from "./../../assets/insta.png";
+import Ex from "./../../assets/insta.png";
 
 const MoreInfo = () => {
   return (
@@ -14,11 +14,11 @@ const MoreInfo = () => {
         finibus tincidunt. Vivamus sed ligula nec odio feugiat faucibus.
         Phasellus imperdiet pharetra dolor, vel rutrum sem. Vestibulum sed sem
         sed leo imperdiet malesuada.
+        <img className="ig" src={Ex} alt="" />
       </p>
-      {/* <div className="iMages">
-        <img src={Ex} alt="" />
-      </div> */}
+      {/* <div className="imGs"> */}
 
+      {/* </div> */}
       <div className="image"></div>
     </div>
   );

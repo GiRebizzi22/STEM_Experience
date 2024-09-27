@@ -35,6 +35,10 @@ section {
   height: 100px;
 }
 
+#Colégio {
+  height: 100%;
+}
+
 @mixin mobile {
   @media (max-width: 738px) {
     @content;

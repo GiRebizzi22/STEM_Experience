@@ -27,14 +27,7 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = [
-    "Home",
-    "O que é STEM?",
-    "Descrição",
-    "Projects",
-    "More",
-    "Feedback",
-  ];
+  const items = ["Home", "O que é STEM?", "Descrição", "Projects", "More"];
 
   return (
     <>
