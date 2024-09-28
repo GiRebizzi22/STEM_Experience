@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useEffect, useState } from "react";
-import "./projeto1.scss";
-import axios from "axios";
-import Suco from "./../../assets/suco1.jpg";
+import { useEffect, useState } from 'react';
+import './projeto1.scss';
+import axios from 'axios';
+import Suco from './../../assets/suco1.jpg';
 
 const Projeto4 = () => {
   const [comentarios, setComentarios] = useState([]);
@@ -11,11 +11,11 @@ const Projeto4 = () => {
     const getComentarios = async () => {
       try {
         const response = await axios.get(
-          "http://82.112.244.100:8070/comentarios"
+          'http://82.112.244.100:8070/comentarios'
         );
         console.log(response.data);
         setComentarios(
-          response.data.filter((item) => item.projeto === "projeto1")
+          response.data.filter((item) => item.projeto === 'projeto1')
         );
       } catch (error) {
         console.log(error);
@@ -24,9 +24,9 @@ const Projeto4 = () => {
     getComentarios();
   }, []);
   return (
-    <div className="projeto1">
+    <div className='projeto1'>
       <h1>Suco Automático</h1>
-      <p className="desc">
+      <p className='desc'>
         O funcionamento é o seguinte: quando você coloca o copo embaixo da
         torneira, o sensor ultrassônico detecta a distância e percebe que tem um
         copo ali. Ele então envia essa informação para o Arduino, que comanda a
@@ -55,10 +55,10 @@ const Projeto4 = () => {
         forma inovadora.
       </p>
 
-      <div className="im">
-        <img src={Suco} alt="imagem do projeto1" />
+      <div className='im'>
+        <img src={Suco} alt='imagem do projeto1' />
       </div>
-      <h1 className="fb">Feedbacks:</h1>
+      {/* <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>
@@ -69,7 +69,7 @@ const Projeto4 = () => {
           </div>
           <p className="tx">{comentario.comentario}</p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

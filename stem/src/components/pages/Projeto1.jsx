@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react";
-import "./projeto1.scss";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import './projeto1.scss';
+import axios from 'axios';
 // import Ex from "./../../assets/insta.png";
-import Rede2 from "./../../assets/parafusadeira.jpg";
-import Capa from "./../../assets/capabask.jpg";
-import Capa2 from "./../../assets/pietra2.jpg";
+import Rede2 from './../../assets/parafusadeira.jpg';
+import Capa from './../../assets/capabask.jpg';
+import Capa2 from './../../assets/pietra2.jpg';
 
-import Form from "../form/Form";
+// import Form from '../form/Form';
 
 const Projeto1 = () => {
   const [comentarios, setComentarios] = useState([]);
   const getComentarios = async () => {
     try {
       const response = await axios.get(
-        "http://82.112.244.100:8070/comentarios"
+        'http://82.112.244.100:8070/comentarios'
       );
       console.log(response.data);
       setComentarios(
-        response.data.filter((item) => item.projeto === "projeto1")
+        response.data.filter((item) => item.projeto === 'projeto1')
       );
     } catch (error) {
       console.log(error);
@@ -28,9 +28,9 @@ const Projeto1 = () => {
   }, []);
 
   return (
-    <div className="projeto1">
+    <div className='projeto1'>
       <h1>Basketball Point</h1>
-      <p className="desc">
+      <p className='desc'>
         Olá, pessoal! Hoje vamos apresentar o nosso projeto de STEM, que é um
         marcador de pontos para uma mini cesta de basquete. Ele usa um Arduino
         Uno, um sensor ultrassônico e um display de 7 segmentos para contar os
@@ -76,12 +76,12 @@ const Projeto1 = () => {
         a dia.
       </p>
 
-      <div className="im">
-        <img src={Capa} alt="imagem do projeto1" />
-        <img src={Rede2} alt="imagem do projeto1" />
-        <img src={Capa2} alt="imagem do projeto1" />
+      <div className='im'>
+        <img src={Capa} alt='imagem do projeto1' />
+        <img src={Rede2} alt='imagem do projeto1' />
+        <img src={Capa2} alt='imagem do projeto1' />
       </div>
-
+      {/* 
       <Form projeto={"projeto1"} atualiza={getComentarios} />
 
       <h1 className="fb">Feedbacks:</h1>
@@ -95,7 +95,7 @@ const Projeto1 = () => {
           </div>
           <p className="tx">{comentario.comentario}</p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

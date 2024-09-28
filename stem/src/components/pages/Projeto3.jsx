@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import "./projeto1.scss";
-import axios from "axios";
-import Piano1 from "./../../assets/piano1.jpg";
-import Piano2 from "./../../assets/piano2.jpg";
+import { useEffect, useState } from 'react';
+import './projeto1.scss';
+import axios from 'axios';
+import Piano1 from './../../assets/piano1.jpg';
+import Piano2 from './../../assets/piano2.jpg';
 
 const Projeto3 = () => {
   const [comentarios, setComentarios] = useState([]);
@@ -11,11 +11,11 @@ const Projeto3 = () => {
     const getComentarios = async () => {
       try {
         const response = await axios.get(
-          "http://82.112.244.100:8070/comentarios"
+          'http://82.112.244.100:8070/comentarios'
         );
         console.log(response.data);
         setComentarios(
-          response.data.filter((item) => item.projeto === "projeto1")
+          response.data.filter((item) => item.projeto === 'projeto1')
         );
       } catch (error) {
         console.log(error);
@@ -24,9 +24,9 @@ const Projeto3 = () => {
     getComentarios();
   }, []);
   return (
-    <div className="projeto1">
+    <div className='projeto1'>
       <h1>Teclarduino</h1>
-      <p className="desc">
+      <p className='desc'>
         Primeiro, eu usei o Arduino Uno como o cérebro do projeto, que é onde
         todo o código que controla os sons fica armazenado. Conectei quatro
         botões à placa do Arduino, cada um para representar uma nota musical
@@ -52,11 +52,11 @@ const Projeto3 = () => {
         frequência controlada pelo código é o que define a altura da nota.
       </p>
 
-      <div className="im">
-        <img src={Piano1} alt="imagem do projeto1" />
-        <img src={Piano2} alt="imagem do projeto1" />
+      <div className='im'>
+        <img src={Piano1} alt='imagem do projeto1' />
+        <img src={Piano2} alt='imagem do projeto1' />
       </div>
-      <h1 className="fb">Feedbacks:</h1>
+      {/* <h1 className="fb">Feedbacks:</h1>
 
       {comentarios.map((comentario) => (
         <div className="comnts" key={comentario.id}>
@@ -67,7 +67,7 @@ const Projeto3 = () => {
           </div>
           <p className="tx">{comentario.comentario}</p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
