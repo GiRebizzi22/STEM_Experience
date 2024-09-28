@@ -1,21 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useEffect, useState } from 'react';
-import './projeto1.scss';
-import axios from 'axios';
-import Grs from './../../assets/girassol1.jpg';
+import { useEffect, useState } from "react";
+import "./projeto1.scss";
+import axios from "axios";
+import Grs from "./../../assets/girassol1.jpg";
 
 const Projeto6 = () => {
-  const [comentarios, setComentarios] = useState([]);
+  // const [comentarios, setComentarios] = useState([]);
 
   useEffect(() => {
     const getComentarios = async () => {
       try {
         const response = await axios.get(
-          'http://82.112.244.100:8070/comentarios'
+          "http://82.112.244.100:8070/comentarios"
         );
         console.log(response.data);
         setComentarios(
-          response.data.filter((item) => item.projeto === 'projeto1')
+          response.data.filter((item) => item.projeto === "projeto1")
         );
       } catch (error) {
         console.log(error);
@@ -24,9 +24,9 @@ const Projeto6 = () => {
     getComentarios();
   }, []);
   return (
-    <div className='projeto1'>
+    <div className="projeto1">
       <h1>Seguessol</h1>
-      <p className='desc'>
+      <p className="desc">
         Primeiro, a gente usa os LDRs para detectar a quantidade de luz em dois
         pontos diferentes. Eles são basicamente resistores que mudam sua
         resistência de acordo com a quantidade de luz que recebem. Coloquei um
@@ -55,8 +55,8 @@ const Projeto6 = () => {
         comportamento natural de uma planta.
       </p>
 
-      <div className='im'>
-        <img src={Grs} alt='imagem do projeto1' />
+      <div className="im">
+        <img src={Grs} alt="imagem do projeto1" />
       </div>
       {/* <h1 className="fb">Feedbacks:</h1>
 

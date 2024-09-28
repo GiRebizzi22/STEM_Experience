@@ -9,7 +9,7 @@ import Piano from "./../../assets/capapiano.jpg";
 import Torneira from "./../../assets/suco1.jpg";
 import Dino from "./../../assets/plataforma1.jpg";
 import Girassol from "./../../assets/girassolcapa.jpg";
-// import Torneira from "./../../assets/torneira.jpg";
+import Moinho from "./../../assets/moinhocapa.jpg";
 
 const items = [
   {
@@ -56,16 +56,16 @@ const items = [
   },
   {
     id: 7,
-    title: "Projeto 7",
-    img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Moinho",
+    img: Moinho,
+    desc: "Moinho automático feito com arduino e um motor de corrente contínua",
     rota: "/projeto7",
   },
   {
     id: 8,
-    title: "Projeto 8",
+    title: "Pebolim",
     img: ProjetoX,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Mesa de pebolim feita feita nas aulas de marcenaria",
     rota: "/projeto8",
   },
   {
